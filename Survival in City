@@ -1,0 +1,90 @@
+#include<bits/stdc++.h>
+#include<conio.h>
+#include<windows.h> 
+using namespace std;
+char decide;
+void login();
+/*struct server
+{
+	string username,password;
+	int id,age,money,diamond,movie,level,exp;
+}a[101];
+void say(string s)
+{
+	for(int i=0;i<s.length();i++)
+	{
+		cout<<s[i];
+		Sleep(10);
+	}
+}*/
+void wrongEng()
+{
+	say("101 means nonsense answer\n102 means username is illegal\n103 system error\n104 means unknown error\n105 means registration error");
+}
+/*void wrongChi()
+{
+	say("101 是乱选\n102 是用户名违规\n103 是系统出错\n104 是未知错误");
+}*/
+void Chinese()
+{
+	
+}
+void English()
+{
+	say("First,you must read our error code");
+	wrongEng();
+	
+}
+/*void reg()
+{
+	int peo,gid;
+	string un,pw;
+	system("cls");
+	say("Hey Guy,you've received a letter from a stranger:\n");
+	say("But it has lost.\nYou must do a lot of things to find it.\nNow you are in a city,you have a mission to survive in it.");
+	//MessageBox(NULL,"Register or Login???","Choose",MB_OKCANCEL+64);
+	if((MessageBox(NULL,"Register or Login???","Choose",MB_OKCANCEL+64))==1)
+	{
+		say("Write down your name and password");
+		cin>>a[peo].username>>a[peo].password;
+		say("Registered successfully!Your ID is:");
+		a[peo].id=peo;
+		cout<<peo;
+		peo++;
+		say(",let's login!");
+		login();
+	}
+}
+void login()
+{
+	int gid;
+	string un,pw;
+	say("Write down your name and password");
+	cin>>gid>>un>>pw;
+	if(a[gid].id==gid)
+	{
+		if(a[gid].username==un&&a[gid].password==pw) say("Welcome,Mr(Mrs)."),cout<<un;
+	}
+	else MessageBox(NULL,"103! 103! 103!","error",MB_OKCANCEL+16),login();
+}*/
+void firstgame(int problems)
+{
+	
+}
+int main()
+{
+	int gl;
+	system("color F0");
+	
+	say("HELLO!THIS IS A GAME OF SURVIVAL!\n");
+	say("By JJL\n");
+	say("Choose your language you can understand:\n");
+	say("1.中文   2.English\n");
+	decide=getch();
+	switch(decide)
+	{
+		case '1':say("Sorry,we'll add this in beta version,now it is gamma(0.1) version!");
+		case '2':English();
+	}
+	return 0;
+}
